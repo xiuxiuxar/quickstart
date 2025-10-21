@@ -1,0 +1,64 @@
+{
+    "name": "Mindshare Agent",
+    "hash": "bafybeigrzisajgvi2qavzrda6wtwol7irjajgf7rjyll5fg7filxj3rvgy",
+    "description": "Mindshare Agent for social data trading",
+    "image": "https://gateway.autonolas.tech/ipfs/bafybeic73qt7npiu55w76q4ipzvqkzfk5rr6sacyqe6crpyip7qddaajtq",
+    "service_version": "v0.1.0",
+    "home_chain": "base",
+    "configurations": {
+        "base": {
+            "agent_id": 73,
+            "nft": "bafybeigszdflje5a6d7x6mqrn66kw2fuqgjg3v5nrq3wncncmtrvyb4nry",
+            "threshold": 1,
+            "use_mech_marketplace": false,
+            "fund_requirements": {
+                "0x0000000000000000000000000000000000000000": {
+                    "agent": 1000000000000000,
+                    "safe": 12500000000000000
+                },
+                "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913": {
+                    "agent": 0,
+                    "safe": 500000000
+                }
+            }
+        }
+    },
+    "env_variables": {
+        "SAFE_CONTRACT_ADDRESSES": {
+            "name": "Safe contract addresses",
+            "description": "",
+            "value": "",
+            "provision_type": "computed"
+        },
+        "STORE_PATH": {
+            "name": "Store Path",
+            "description": "",
+            "value": "/logs",
+            "provision_type": "fixed"
+        },
+        "CONNECTION_DCXT_CONFIG_EXCHANGES_0_ETHERSCAN_API_KEY": {
+            "name": "Etherscan API Key",
+            "description": "Etherscan API Key will be used to fetch the prices of the tokens. Get your key at https://docs.etherscan.io/etherscan-v2/getting-an-api-key",
+            "value": "",
+            "provision_type": "user"
+        },
+        "SKILL_MINDSHARE_APP_MODELS_PARAMS_ARGS_COINGECKO_API_KEY": {
+            "name": "Coingecko API Key",
+            "description": "Coingecko API Key will be used to fetch the prices of the tokens. Get your key at https://www.coingecko.com/en/api",
+            "value": "",
+            "provision_type": "user"
+        },
+        "SKILL_MINDSHARE_APP_MODELS_PARAMS_ARGS_TRENDMOON_API_KEY": {
+            "name": "Trendmoon API Key",
+            "description": "Trendmoon API Key will be used to fetch the social data of the tokens. Get your key at https://docs.trendmoon.ai/taimat-api/authentification",
+            "value": "",
+            "provision_type": "user"
+        },
+        "SKILL_MINDSHARE_APP_MODELS_PARAMS_ARGS_RESET_PAUSE_DURATION": {
+            "name": "Reset Pause Duration",
+            "description": "Reset Pause Duration will be used to reset the pause duration of the agent.",
+            "value": "300",
+            "provision_type": "fixed"
+        }
+    }
+}

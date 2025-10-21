@@ -41,6 +41,7 @@ where `agent_config.json` is the path to your agent configuration file. Check th
 | Optimus | `configs/config_optimus.json` | [Optimus README](https://github.com/valory-xyz/optimus) |
 | Modius | `configs/config_modius.json` | [Modius README](https://github.com/valory-xyz/modius-quickstart) |
 | Agents.fun | `configs/config_agents.fun.json` | [Agents.fun README](https://github.com/dvilelaf/meme-ooorr) |
+| Mindshare | `configs/config_minshare.json` | [Mindshare README](https://github.com/Trend-Spotter/trendmoon-mindshare-agent) |
 
 ### For Non-Stakers
 
