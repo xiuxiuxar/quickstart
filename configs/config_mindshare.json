@@ -1,6 +1,6 @@
 {
     "name": "Mindshare Agent",
-    "hash": "bafybeigrzisajgvi2qavzrda6wtwol7irjajgf7rjyll5fg7filxj3rvgy",
+    "hash": "bafybeie4imq7hmybacvtahgxc4spleux3pzttygtiwdqazl2ojk64eugbq",
     "description": "Mindshare Agent for social data trading",
     "image": "https://gateway.autonolas.tech/ipfs/bafybeic73qt7npiu55w76q4ipzvqkzfk5rr6sacyqe6crpyip7qddaajtq",
     "service_version": "v0.1.0",
@@ -18,7 +18,7 @@
                 },
                 "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913": {
                     "agent": 0,
-                    "safe": 500000000
+                    "safe": 15000000
                 }
             }
         }
