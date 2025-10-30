@@ -8,7 +8,7 @@
     "configurations": {
         "base": {
             "agent_id": 73,
-            "nft": "bafybeigszdflje5a6d7x6mqrn66kw2fuqgjg3v5nrq3wncncmtrvyb4nry",
+            "nft": "bafybeihy4n2nh3woasu4j5hf73nxwvpb7k33rcycs4qsudc2lsz2r6ymai",
             "threshold": 1,
             "use_mech_marketplace": false,
             "fund_requirements": {
@@ -33,7 +33,7 @@
         "STORE_PATH": {
             "name": "Store Path",
             "description": "",
-            "value": "/logs",
+            "value": "/data",
             "provision_type": "fixed"
         },
         "CONNECTION_DCXT_CONFIG_EXCHANGES_0_ETHERSCAN_API_KEY": {
