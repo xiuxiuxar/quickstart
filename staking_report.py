@@ -1,6 +1,6 @@
-# staking_report.py
+#!/usr/bin/env python3
+
 import warnings
-warnings.filterwarnings("ignore", category=UserWarning)
 import json
 import math
 from pathlib import Path
@@ -13,6 +13,7 @@ from run_service import (
     FALLBACK_STAKING_PARAMS,
     CHAIN_ID_TO_METADATA,
     OPERATE_HOME,
+    load_local_config,
 )
 
 from operate.ledger.profiles import STAKING
@@ -26,14 +27,14 @@ from utils import (
     wei_to_eth,
     _warning_message,
     StakingState,
-    get_chain_name,
     load_operator_safe_balance,
-    validate_config,
     _color_bool,
     _color_string,
     ColorCode
 
 )
+
+warnings.filterwarnings("ignore", category=UserWarning)
 
 # Set decimal precision
 getcontext().prec = 18
@@ -230,7 +231,7 @@ def staking_report(config: dict) -> None:
 if __name__ == "__main__":
     try:
         # Load configuration
-        config = load_config()
+        config = load_local_config()
         if not config:
             print("Error: Config is empty.")
         else:
